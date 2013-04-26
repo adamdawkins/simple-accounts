@@ -1,4 +1,7 @@
 WolvesAccounts::Application.routes.draw do
+  resources :explainations
+
+
   resources :transactions
 
 

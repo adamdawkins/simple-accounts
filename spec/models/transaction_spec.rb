@@ -18,4 +18,9 @@ describe Transaction do
     expect(Transaction.new).to respond_to(:explaination) 
   end
 
+  it "has an explaination" do
+    expect(Transaction.reflect_on_association(:explaination).macro).to eq :has_one
+  end
+
 end
+

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Reason:</b>
+  <%= @explaination.reason %>
+</p>
+
+<p>
+  <b>Team:</b>
+  <%= @explaination.team_id %>
+</p>
+
+<p>
+  <b>Transaction:</b>
+  <%= @explaination.transaction_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @explaination.category_id %>
+</p>
+
+<p>
+  <b>Other party:</b>
+  <%= @explaination.other_party %>
+</p>
+
+
+<%= link_to 'Edit', edit_explaination_path(@explaination) %> |
+<%= link_to 'Back', explainations_path %>

@@ -1,0 +1,31 @@
+<h1>Listing explainations</h1>
+
+<table>
+  <tr>
+    <th>Reason</th>
+    <th>Team</th>
+    <th>Transaction</th>
+    <th>Category</th>
+    <th>Other party</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @explainations.each do |explaination| %>
+  <tr>
+    <td><%= explaination.reason %></td>
+    <td><%= explaination.team_id %></td>
+    <td><%= explaination.transaction_id %></td>
+    <td><%= explaination.category_id %></td>
+    <td><%= explaination.other_party %></td>
+    <td><%= link_to 'Show', explaination %></td>
+    <td><%= link_to 'Edit', edit_explaination_path(explaination) %></td>
+    <td><%= link_to 'Destroy', explaination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Explaination', new_explaination_path %>
