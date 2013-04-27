@@ -7,6 +7,8 @@ class Transaction < ActiveRecord::Base
   validates_presence_of :description
   validates_presence_of :amount
 
+  validates_numericality_of :amount, greater_than: 0.00
+
   def unexplained_amount
     return amount
   end

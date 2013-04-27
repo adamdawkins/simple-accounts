@@ -7,5 +7,6 @@ FactoryGirl.define do
     transaction_id 1
     category_id 1
     other_party "MyString"
+    amount 1.50
   end
 end

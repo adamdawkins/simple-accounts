@@ -6,6 +6,7 @@ class CreateExplainations < ActiveRecord::Migration
       t.integer :transaction_id
       t.integer :category_id
       t.string :other_party
+      t.float :amount
 
       t.timestamps
     end
